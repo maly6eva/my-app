@@ -10,6 +10,12 @@ const MyPost = (props) => {
 
 
     let postElements = props.posts.map( p =>  <Post message={p.message} mes={p.mes} des={p.des}/>)
+
+
+    let addPost =() => {
+        alert('samuraijs.com');
+
+    }
     return (
         <div className={classes.postBlock}>
        <h3>My post</h3>
@@ -18,7 +24,7 @@ const MyPost = (props) => {
                 <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
             <div>
-                <button>Add post</button>
+                <button onClick={addPost}>Add post</button>
             </div>
 
 
